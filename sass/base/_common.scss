@@ -1,0 +1,152 @@
+body {
+  font-family: $roboto;
+}
+
+.conteiner {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include for-size(tablet-portrait) {
+    width: 480px;
+  }
+
+  @include for-size(tablet-landscape) {
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    width: 1200px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  background-position: center;
+  background-color: #212121;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header.jpg);
+}
+
+.section {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $primary-text-color;
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  @include for-size(tablet-portrait) {
+    text-align: center;
+  }
+
+  @include for-size(tablet-landscape) {
+    text-align: left;
+  }
+
+  @include for-size(desktop) {
+    text-align: left;
+  }
+}
+
+h2 {
+  margin-bottom: 4px;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: $primary-text-color;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.87;
+  color: $secondary-text-color;
+}
+
+footer {
+  background-color: #2f303a;
+}
+
+b {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $primary-white-color;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-tittle {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-weight: 900;
+  // font-size: 44px;
+  font-size: 26px;
+  line-height: 1.36;
+  color: $primary-white-color;
+}
+
+.tittle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.16;
+  color: $primary-text-color;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @include for-size(desktop) {
+    margin-bottom: 30px;
+  }
+
+  @include for-size(desktop) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
