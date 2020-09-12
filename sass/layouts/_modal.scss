@@ -1,15 +1,24 @@
 .modal-form {
-  width: 448px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  max-width: 450px;
   margin-left: auto;
   margin-right: auto;
+  padding: 40px;
+
+  @include for-size(desktop) {
+    max-width: 528px;
+    height: 609px;
+  }
 }
 
 .form-field {
   display: flex;
   flex-direction: column;
-  width: 448px;
+  width: 370px;
+
+  @include for-size(desktop) {
+    width: 448px;
+    margin-right: 0;
+  }
 
   &:not(:nth-child(5)) {
     margin-bottom: 10px;
@@ -20,12 +29,16 @@
 }
 
 textarea {
-  width: 100%;
+  max-width: 370px;
   height: 120px;
   resize: none;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  @include for-size(desktop) {
+    max-width: 448px;
+  }
 
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
@@ -64,8 +77,8 @@ textarea {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   background: #ffffff;
@@ -75,6 +88,10 @@ textarea {
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include for-size(desktop) {
+    width: 528px;
+  }
 }
 .modal-form b {
   font-size: 20px;
@@ -82,6 +99,7 @@ textarea {
   color: #212121;
   margin-left: 15px;
   margin-right: 15px;
+  align-items: center;
 }
 .btn-close {
   display: inline-block;
@@ -120,14 +138,25 @@ textarea {
 
 .mod {
   margin-top: 23px;
-  margin-left: 124px;
-  margin-right: 124px;
+  margin-left: 85px;
+  margin-right: 85px;
+  text-align: center;
+
+  @include for-size(desktop) {
+    margin-left: 124px;
+    margin-right: 124px;
+  }
 }
 
 .contact-about-us {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 10px 15px 10px 42px;
+  max-width: 370px;
+
+  @include for-size(desktop) {
+    max-width: 448px;
+  }
 }
 
 input:focus {
@@ -140,11 +169,15 @@ input:focus {
 }
 
 .license {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
   vertical-align: middle;
+
+  @include for-size(desktop) {
+    font-size: 14px;
+  }
 }
 
 .license-link {
@@ -173,8 +206,11 @@ input:focus {
   border: 2px solid #212121;
   border-radius: 2px;
   margin-right: 7px;
-  margin-left: 11px;
   vertical-align: middle;
+
+  @include for-size(desktop) {
+    margin-left: 11px;
+  }
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

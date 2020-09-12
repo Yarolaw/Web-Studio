@@ -1,5 +1,7 @@
 .section-none {
-  display: none;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    display: none;
+  }
 }
 .projects {
   color: $primary-white-color;

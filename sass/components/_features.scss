@@ -18,6 +18,9 @@
 
     @include for-size(tablet-landscape) {
       width: 354px;
+      &:nth-child(odd) {
+        margin-right: 30px;
+      }
     }
 
     @include for-size(desktop) {

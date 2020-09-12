@@ -1,5 +1,9 @@
 .footer-block {
-  padding: 60px 0;
+  padding: 60px 15px 60px 15px;
+
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
 
 .footer-icon {
@@ -11,9 +15,7 @@
 .social-element-footer:not(:last-child) {
   margin-right: 10px;
 }
-// .footer-flex {
-//   // display: flex;
-// }
+
 .footer-mail {
   font-style: normal;
   font-size: 14px;
@@ -31,10 +33,27 @@
   margin-bottom: 0;
   padding: 0;
 }
+.footer-contacts {
+  @include for-size(tablet-landscape) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 .form {
   max-width: 570px;
-  margin-top: 72px;
-  margin-bottom: 94px;
+  // margin-top: 72px;
+  // margin-bottom: 94px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  @include for-size(desktop) {
+    margin-left: 93px;
+    margin-top: 12px;
+    margin-bottom: 34px;
+  }
 }
 .form-element input {
   width: 450px;
@@ -44,14 +63,26 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  @include for-size(desktop) {
+    width: 358px;
+  }
 }
 .email-box {
-  // display: flex;
   margin-top: 20px;
+
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
 .footer-button {
-  // display: inline-flex;
+  display: inline-flex;
   align-items: center;
   padding: 10px 30px;
   cursor: pointer;
+  margin-top: 20px;
+
+  @include for-size(desktop) {
+    margin-top: 0;
+  }
 }

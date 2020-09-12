@@ -5,6 +5,7 @@
   padding-left: 32px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .social-element {
   width: 44px;
@@ -41,8 +42,22 @@
 .social-links-block {
   width: 206px;
   margin-top: 72px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+  // margin-bottom: 100px;
   // margin-right: 94px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+  @include for-size(tablet-landscape) {
+    margin-top: 0;
+  }
+
+  @include for-size(desktop) {
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 34px;
+  }
 
   & b {
     text-transform: uppercase;

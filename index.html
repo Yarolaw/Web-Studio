@@ -35,7 +35,7 @@
           </ul>
 
           <ul class="list">
-            <li class="item">
+            <li class="item item-mail">
               <a href="" class="mail">
                 <svg class="icon-contacts" width="16" height="11">
                   <use href="./images/icons/sprite.svg#icon-logomail"></use>
@@ -118,11 +118,19 @@
           <ul class="projects-item">
             <li class="projects-elements">
               <div class="box-image">
-                <img
-                  src="./images/Desktop-applications.jpg"
-                  alt=""
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/projects/card-1.jpg   1x,
+                      ./images/projects/card-1@2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/projects/card-1.jpg"
+                    alt="ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ"
+                  />
+                </picture>
                 <div class="text-position">
                   <h3 class="projects">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
                 </div>
@@ -130,11 +138,19 @@
             </li>
             <li class="projects-elements">
               <div class="box-image">
-                <img
-                  src="./images/Mobile-applications.jpg"
-                  alt=""
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/projects/card-2.jpg   1x,
+                      ./images/projects/card-2@2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/projects/card-2.jpg"
+                    alt="МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ"
+                  />
+                </picture>
                 <div class="text-position">
                   <h3 class="projects">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
                 </div>
@@ -142,7 +158,19 @@
             </li>
             <li class="projects-elements">
               <div class="box-image">
-                <img src="./images/Design-Solutions.jpg" alt="" width="370" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/projects/card-3.jpg   1x,
+                      ./images/projects/card-3@2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/projects/card-3.jpg"
+                    alt="ДИЗАЙНЕРСКИЕ РЕШЕНИЯ"
+                  />
+                </picture>
                 <div class="text-position">
                   <h3 class="projects">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
                 </div>
@@ -160,7 +188,33 @@
 
           <ul class="team-item">
             <li class="team-element">
-              <img src="./images/Игорь-Демьяненко.jpg" alt="" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/card-1-d.jpg   1x,
+                    ./images/team/desktop/card-1-d@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/card-1-t.jpg   1x,
+                    ./images/team/tablet/card-1-t@2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/card-1-m.jpg   1x,
+                    ./images/team/mobile/card-1-m@2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team/desktop/card-1-d.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <h3 class="names">Игорь Демьяненко</h3>
               <p class="names-text">Product Designer</p>
               <ul class="social-links">
@@ -197,7 +251,33 @@
               </ul>
             </li>
             <li class="team-element">
-              <img src="./images/Ольга-Репина.jpg" alt="" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/card-2-d.jpg   1x,
+                    ./images/team/desktop/card-2-d@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/card-2-t.jpg   1x,
+                    ./images/team/tablet/card-2-t@2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/card-2-m.jpg   1x,
+                    ./images/team/mobile/card-2-m@2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team/desktop/card-2-d.jpg"
+                  alt="Ольга Репина"
+                />
+              </picture>
               <h3 class="names">Ольга Репина</h3>
               <p class="names-text">Frontend Developer</p>
               <ul class="social-links">
@@ -234,7 +314,33 @@
               </ul>
             </li>
             <li class="team-element">
-              <img src="./images/Николай-Тарасов.jpg" alt="" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/card-3-d.jpg   1x,
+                    ./images/team/desktop/card-3-d@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/card-3-t.jpg   1x,
+                    ./images/team/tablet/card-3-t@2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/card-3-m.jpg   1x,
+                    ./images/team/mobile/card-3-m@2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team/desktop/card-3-d.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
               <h3 class="names">Николай Тарасов</h3>
               <p class="names-text">Marketing</p>
               <ul class="social-links">
@@ -271,7 +377,33 @@
               </ul>
             </li>
             <li class="team-element">
-              <img src="./images/Михаил-Ермаков.jpg" alt="" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/card-4-d.jpg   1x,
+                    ./images/team/desktop/card-4-d@2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/card-4-t.jpg   1x,
+                    ./images/team/tablet/card-4-t@2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/card-4-m.jpg   1x,
+                    ./images/team/mobile/card-4-m@2.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/team/desktop/card-4-d.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
               <h3 class="names">Михаил Ермаков</h3>
               <p class="names-text">UI Designer</p>
               <ul class="social-links">
@@ -366,60 +498,62 @@
 
     <footer>
       <div class="conteiner footer-block">
-        <div class="adress-block">
-          <a href="" class="logo"
-            >Web<span class="footer-color-logo"> Studio</span></a
-          >
-          <address>
-            <ul class="adress-list">
-              <li class="adress-item adress-prime">
-                <a href=""
-                  ><span class="footer-adress"
-                    >г. Киев, пр-т Леси Украинки, 26</span
-                  ><br
-                /></a>
+        <div class="footer-contacts">
+          <div class="adress-block">
+            <a href="" class="logo"
+              >Web<span class="footer-color-logo"> Studio</span></a
+            >
+            <address>
+              <ul class="adress-list">
+                <li class="adress-item adress-prime">
+                  <a href=""
+                    ><span class="footer-adress"
+                      >г. Киев, пр-т Леси Украинки, 26</span
+                    ><br
+                  /></a>
+                </li>
+                <li class="adress-item">
+                  <a href="" class="footer-mail">info@example.com</a><br />
+                </li>
+                <li class="adress-item">
+                  <a href="" class="footer-mail">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-links-block">
+            <b>присоединяйтесь</b>
+            <ul class="social-links footer-social">
+              <li class="social-element-footer">
+                <a href="" class="social-icons-link footer-links">
+                  <svg class="social-icon footer-icon" width="20" height="20">
+                    <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adress-item">
-                <a href="" class="footer-mail">info@example.com</a><br />
+              <li class="social-element-footer">
+                <a href="" class="social-icons-link footer-links">
+                  <svg class="social-icon footer-icon" width="20" height="20">
+                    <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adress-item">
-                <a href="" class="footer-mail">+38 099 111 11 11</a>
+              <li class="social-element-footer">
+                <a href="" class="social-icons-link footer-links">
+                  <svg class="social-icon footer-icon" width="20" height="20">
+                    <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-element-footer">
+                <a href="" class="social-icons-link footer-links">
+                  <svg class="social-icon footer-icon" width="20" height="20">
+                    <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="social-links-block">
-          <b>присоединяйтесь</b>
-          <ul class="social-links footer-social">
-            <li class="social-element-footer">
-              <a href="" class="social-icons-link footer-links">
-                <svg class="social-icon footer-icon" width="20" height="20">
-                  <use href="./images/icons/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-element-footer">
-              <a href="" class="social-icons-link footer-links">
-                <svg class="social-icon footer-icon" width="20" height="20">
-                  <use href="./images/icons/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-element-footer">
-              <a href="" class="social-icons-link footer-links">
-                <svg class="social-icon footer-icon" width="20" height="20">
-                  <use href="./images/icons/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-element-footer">
-              <a href="" class="social-icons-link footer-links">
-                <svg class="social-icon footer-icon" width="20" height="20">
-                  <use href="./images/icons/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <form class="form">
