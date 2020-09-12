@@ -1,6 +1,10 @@
 .page-header {
-  margin-bottom: 94px;
+  margin-bottom: 60px;
   border: 1px solid #ececec;
+
+  @include for-size(desktop) {
+    margin-bottom: 94px;
+  }
 }
 .nav-link {
   display: inline-block;

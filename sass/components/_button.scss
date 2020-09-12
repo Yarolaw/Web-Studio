@@ -14,6 +14,11 @@
 .button-element:not(:last-child) {
   margin-right: 8px;
 }
+.first-button {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
 
 .buttons {
   padding: 6px 22px;

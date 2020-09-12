@@ -1,7 +1,16 @@
 .filter-list {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   margin-top: 0;
+
+  @include for-size(tablet-landscape) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }

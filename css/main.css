@@ -514,6 +514,12 @@ a {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 767px) {
+  .first-button {
+    margin-bottom: 15px;
+  }
+}
+
 .buttons {
   padding: 6px 22px;
   font-weight: 500;
@@ -1118,8 +1124,14 @@ a {
 }
 
 .page-header {
-  margin-bottom: 94px;
+  margin-bottom: 60px;
   border: 1px solid #ececec;
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    margin-bottom: 94px;
+  }
 }
 
 .nav-link {
@@ -1233,7 +1245,6 @@ a {
 @media (min-width: 1200px) {
   .modal-form {
     max-width: 528px;
-    height: 609px;
   }
 }
 
@@ -1349,18 +1360,18 @@ textarea:focus {
 @media (min-width: 1200px) {
   .modal {
     width: 528px;
+    height: 581px;
   }
 }
 
-.modal-form b {
+.modal-form h3 {
   font-size: 20px;
   line-height: 1, 15;
   color: #212121;
   margin-left: 15px;
   margin-right: 15px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-top: 0;
+  text-align: center;
 }
 
 .btn-close {
