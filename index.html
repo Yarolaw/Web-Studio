@@ -17,7 +17,7 @@
   <body>
     <!--Шапка сайта-->
 
-    <header>
+    <header class="header-relative">
       <div class="conteiner">
         <nav class="main-nav">
           <a href="" class="logo"
@@ -55,6 +55,7 @@
           <button
             class="menu-button is-open"
             type="button"
+            aria-controls="menu-conteiner"
             aria-expanded="false"
             data-menu-button
           >
@@ -65,17 +66,49 @@
             >
               <use
                 class="icon-cross"
-                href="./images/icons/sprite.svg#icon-cross"
+                href="./images/icons/sprite.svg#icon-close-menu"
               ></use>
               <use
                 class="icon-menu"
-                href="./images/icons/sprite.svg#icon-mob-menu"
+                href="./images/icons/sprite.svg#icon-mobal-menu"
               ></use>
             </svg>
           </button>
+
+          <div class="menu-container is-open" id="menu-conteiner" data-menu>
+            <ul class="site-nav-list menu-nav">
+              <li class="item mob-item">
+                <a href="" class="nav-link">Студия</a>
+              </li>
+              <li class="item mob-item">
+                <a href="./portfolio.html" class="nav-link">Портфолио</a>
+              </li>
+              <li class="item mob-item">
+                <a href="" class="nav-link">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="list menu-contacts">
+              <li class="item item-mail">
+                <a href="" class="mail">
+                  <svg class="icon-contacts" width="16" height="11">
+                    <use href="./images/icons/sprite.svg#icon-logomail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="item">
+                <a href="" class="tel">
+                  <svg class="icon-contacts" width="10" height="15">
+                    <use href="./images/icons/sprite.svg#icon-logophone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
-      <div class="menu-container"></div>
     </header>
     <main>
       <!--Герой-->

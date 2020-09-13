@@ -23,6 +23,10 @@
 
   & .item:not(:last-child) {
     margin-right: 50px;
+
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+    }
   }
 }
 .item-mail {
@@ -48,5 +52,9 @@
 
   & .item:not(:last-child) {
     margin-right: 30px;
+
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+    }
   }
 }

@@ -22,6 +22,10 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
 }
 .tel {
   font-weight: 500;
@@ -32,5 +36,9 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
   }
 }
