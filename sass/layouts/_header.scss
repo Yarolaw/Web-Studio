@@ -1,6 +1,7 @@
 .page-header {
   margin-bottom: 60px;
   border: 1px solid #ececec;
+  position: relative;
 
   @include for-size(desktop) {
     margin-bottom: 94px;
