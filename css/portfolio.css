@@ -717,6 +717,12 @@ a {
   display: block;
 }
 
+@media (min-width: 1200px) {
+  .menu-container {
+    display: none;
+  }
+}
+
 .menu-nav {
   display: none;
 }

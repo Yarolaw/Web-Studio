@@ -44,7 +44,11 @@
   &.is-open {
     display: block;
   }
+  @include for-size(desktop) {
+    display: none;
+  }
 }
+
 .menu-nav {
   display: none;
 
